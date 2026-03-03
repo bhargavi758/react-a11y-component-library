@@ -15,13 +15,13 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-stanford-red text-white hover:bg-stanford-red-dark focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
+    'bg-brand-primary text-white hover:bg-brand-primary-dark focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
   secondary:
-    'bg-stanford-black text-white hover:bg-stanford-warm-grey focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
+    'bg-brand-dark text-white hover:bg-brand-warm-grey focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
   outline:
-    'border-2 border-stanford-red text-stanford-red hover:bg-stanford-red hover:text-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
+    'border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
   ghost:
-    'text-stanford-red hover:bg-stanford-fog focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
+    'text-brand-primary hover:bg-brand-fog focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-focus',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

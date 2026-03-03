@@ -93,8 +93,8 @@ export function Tabs({
         aria-orientation={orientation}
         className={classNames(
           isHorizontal
-            ? 'flex border-b border-stanford-fog-dark'
-            : 'flex flex-col border-r border-stanford-fog-dark',
+            ? 'flex border-b border-brand-fog-dark'
+            : 'flex flex-col border-r border-brand-fog-dark',
         )}
       >
         {tabs.map((tab, index) => {
@@ -117,9 +117,9 @@ export function Tabs({
                 'focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-focus focus:outline-none',
                 isActive
                   ? isHorizontal
-                    ? 'border-b-2 border-stanford-red text-stanford-red'
-                    : 'border-r-2 border-stanford-red text-stanford-red bg-stanford-fog'
-                  : 'text-stanford-cool-grey hover:text-stanford-black hover:bg-stanford-fog',
+                    ? 'border-b-2 border-brand-primary text-brand-primary'
+                    : 'border-r-2 border-brand-primary text-brand-primary bg-brand-fog'
+                  : 'text-brand-cool-grey hover:text-brand-dark hover:bg-brand-fog',
                 tab.disabled && 'opacity-50 cursor-not-allowed',
               )}
             >

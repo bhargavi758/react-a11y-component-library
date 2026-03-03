@@ -205,7 +205,7 @@ export function Dropdown({
     <div className={classNames('relative', className)}>
       <label
         id={labelId}
-        className="block text-sm font-medium text-stanford-black mb-1"
+        className="block text-sm font-medium text-brand-dark mb-1"
       >
         {label}
       </label>
@@ -229,19 +229,19 @@ export function Dropdown({
         className={classNames(
           'w-full flex items-center justify-between px-3 py-2 border rounded-md text-left',
           'transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus',
-          disabled && 'opacity-50 cursor-not-allowed bg-stanford-fog',
+          disabled && 'opacity-50 cursor-not-allowed bg-brand-fog',
           error
             ? 'border-red-500'
-            : 'border-stanford-fog-dark hover:border-stanford-cool-grey',
+            : 'border-brand-fog-dark hover:border-brand-cool-grey',
           !disabled && 'bg-white',
         )}
       >
-        <span className={selectedOption ? 'text-stanford-black' : 'text-stanford-cool-grey'}>
+        <span className={selectedOption ? 'text-brand-dark' : 'text-brand-cool-grey'}>
           {selectedOption?.label ?? placeholder}
         </span>
         <svg
           className={classNames(
-            'h-5 w-5 text-stanford-cool-grey transition-transform',
+            'h-5 w-5 text-brand-cool-grey transition-transform',
             isOpen && 'rotate-180',
           )}
           xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +267,7 @@ export function Dropdown({
           onKeyDown={handleListKeyDown}
           className={classNames(
             'absolute z-20 mt-1 w-full max-h-60 overflow-auto rounded-md bg-white',
-            'border border-stanford-fog-dark shadow-lg py-1',
+            'border border-brand-fog-dark shadow-lg py-1',
             'focus:outline-none',
           )}
         >
@@ -287,10 +287,10 @@ export function Dropdown({
               }}
               className={classNames(
                 'px-3 py-2 cursor-pointer select-none',
-                index === activeIndex && 'bg-stanford-fog',
-                option.value === selectedValue && 'font-medium text-stanford-red',
+                index === activeIndex && 'bg-brand-fog',
+                option.value === selectedValue && 'font-medium text-brand-primary',
                 option.disabled && 'opacity-50 cursor-not-allowed',
-                !option.disabled && index !== activeIndex && 'hover:bg-stanford-fog',
+                !option.disabled && index !== activeIndex && 'hover:bg-brand-fog',
               )}
             >
               {option.label}

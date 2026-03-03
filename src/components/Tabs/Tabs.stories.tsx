@@ -24,7 +24,7 @@ const sampleTabs = [
     content: (
       <div>
         <h3 className="font-semibold mb-2">Program Overview</h3>
-        <p>Stanford's Computer Science department offers rigorous programs at the undergraduate and graduate levels, emphasizing both theory and practical application.</p>
+        <p>The Computer Science department offers rigorous programs at the undergraduate and graduate levels, emphasizing both theory and practical application.</p>
       </div>
     ),
   },

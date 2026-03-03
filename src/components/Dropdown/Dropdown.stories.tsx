@@ -76,7 +76,7 @@ export const Controlled: Story = {
           value={value}
           onChange={setValue}
         />
-        <p className="mt-2 text-sm text-stanford-cool-grey">
+        <p className="mt-2 text-sm text-brand-cool-grey">
           Selected: {value}
         </p>
       </div>

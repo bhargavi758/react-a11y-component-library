@@ -85,7 +85,7 @@ export function Accordion({
   );
 
   return (
-    <div className={classNames('divide-y divide-stanford-fog-dark border border-stanford-fog-dark rounded-lg', className)}>
+    <div className={classNames('divide-y divide-brand-fog-dark border border-brand-fog-dark rounded-lg', className)}>
       {items.map((item, index) => {
         const isExpanded = expandedIds.has(item.id);
         const headingId = `${baseId}-heading-${item.id}`;
@@ -105,17 +105,17 @@ export function Accordion({
                 onKeyDown={(e) => handleKeyDown(e, index)}
                 className={classNames(
                   'flex w-full items-center justify-between px-4 py-3 text-left',
-                  'font-medium text-stanford-black transition-colors',
+                  'font-medium text-brand-dark transition-colors',
                   'focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-focus focus:outline-none',
                   item.disabled
                     ? 'opacity-50 cursor-not-allowed'
-                    : 'hover:bg-stanford-fog cursor-pointer',
+                    : 'hover:bg-brand-fog cursor-pointer',
                 )}
               >
                 <span>{item.title}</span>
                 <svg
                   className={classNames(
-                    'h-5 w-5 text-stanford-cool-grey transition-transform duration-200',
+                    'h-5 w-5 text-brand-cool-grey transition-transform duration-200',
                     isExpanded && 'rotate-180',
                   )}
                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ export function Accordion({
               role="region"
               aria-labelledby={headingId}
               hidden={!isExpanded}
-              className="px-4 pb-4 pt-2 text-stanford-cool-grey"
+              className="px-4 pb-4 pt-2 text-brand-cool-grey"
             >
               {item.content}
             </div>

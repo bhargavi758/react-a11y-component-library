@@ -5,11 +5,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        stanford: {
-          red: '#8C1515',
-          'red-dark': '#6E1010',
-          'red-light': '#B83A4B',
-          black: '#2E2D29',
+        brand: {
+          primary: '#2563EB',
+          'primary-dark': '#1D4ED8',
+          'primary-light': '#3B82F6',
+          dark: '#2E2D29',
           white: '#FFFFFF',
           'cool-grey': '#4D4F53',
           'warm-grey': '#3F3C30',

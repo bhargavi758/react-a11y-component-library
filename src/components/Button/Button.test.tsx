@@ -12,10 +12,10 @@ describe('Button', () => {
 
   it('applies the correct variant class', () => {
     const { rerender } = render(<Button variant="primary">Primary</Button>);
-    expect(screen.getByRole('button')).toHaveClass('bg-stanford-red');
+    expect(screen.getByRole('button')).toHaveClass('bg-brand-primary');
 
     rerender(<Button variant="outline">Outline</Button>);
-    expect(screen.getByRole('button')).toHaveClass('border-stanford-red');
+    expect(screen.getByRole('button')).toHaveClass('border-brand-primary');
   });
 
   it('calls onClick handler when clicked', async () => {

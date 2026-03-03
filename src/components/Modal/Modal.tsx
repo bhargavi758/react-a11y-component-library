@@ -79,14 +79,14 @@ export function Modal({
         )}
       >
         <div className="flex items-start justify-between mb-4">
-          <h2 id={titleId} className="text-xl font-semibold text-stanford-black">
+          <h2 id={titleId} className="text-xl font-semibold text-brand-dark">
             {title}
           </h2>
           <button
             onClick={onClose}
             aria-label="Close dialog"
             className={classNames(
-              'p-1 rounded-md text-stanford-cool-grey hover:text-stanford-black',
+              'p-1 rounded-md text-brand-cool-grey hover:text-brand-dark',
               'focus-visible:ring-2 focus-visible:ring-focus focus:outline-none',
               'transition-colors',
             )}
@@ -108,7 +108,7 @@ export function Modal({
         </div>
 
         {description && (
-          <p id={descriptionId} className="text-sm text-stanford-cool-grey mb-4">
+          <p id={descriptionId} className="text-sm text-brand-cool-grey mb-4">
             {description}
           </p>
         )}

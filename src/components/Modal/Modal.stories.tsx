@@ -29,7 +29,7 @@ function ModalDemo(props: Partial<React.ComponentProps<typeof Modal>>) {
         title="Example Modal"
         {...props}
       >
-        <p className="text-stanford-cool-grey mb-4">
+        <p className="text-brand-cool-grey mb-4">
           This is an accessible modal dialog. Try pressing Escape or clicking the overlay to close.
         </p>
         <div className="flex gap-2 justify-end">

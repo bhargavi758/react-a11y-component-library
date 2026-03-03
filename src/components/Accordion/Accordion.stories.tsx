@@ -5,22 +5,22 @@ const sampleItems = [
   {
     id: 'admissions',
     title: 'Undergraduate Admissions',
-    content: 'Stanford accepts applications through the Common Application and the Coalition Application. The acceptance rate is approximately 4%, making it one of the most selective universities in the world.',
+    content: 'The university accepts applications through the Common Application and the Coalition Application. The acceptance rate is approximately 4%, making it one of the most selective universities in the world.',
   },
   {
     id: 'financial-aid',
     title: 'Financial Aid',
-    content: 'Stanford meets 100% of demonstrated financial need for admitted students. Families with incomes below $75,000 pay no tuition, room, or board.',
+    content: 'The university meets 100% of demonstrated financial need for admitted students. Families with incomes below $75,000 pay no tuition, room, or board.',
   },
   {
     id: 'housing',
     title: 'Campus Housing',
-    content: 'Stanford guarantees four years of on-campus housing for undergraduate students. The residential education program integrates academic and social life.',
+    content: 'The university guarantees four years of on-campus housing for undergraduate students. The residential education program integrates academic and social life.',
   },
   {
     id: 'research',
     title: 'Research Opportunities',
-    content: 'Undergraduates can participate in research through programs like SURP (Stanford Undergraduate Research Program) and UAR (Undergraduate Advising and Research).',
+    content: 'Undergraduates can participate in research through programs like the Undergraduate Research Program (URP) and Undergraduate Advising and Research (UAR).',
   },
 ];
 

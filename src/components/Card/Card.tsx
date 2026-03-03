@@ -26,8 +26,8 @@ export interface CardActionsProps {
 
 const variantStyles = {
   elevated: 'bg-white shadow-md hover:shadow-lg',
-  outlined: 'bg-white border border-stanford-fog-dark',
-  filled: 'bg-stanford-fog',
+  outlined: 'bg-white border border-brand-fog-dark',
+  filled: 'bg-brand-fog',
 };
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
@@ -114,14 +114,14 @@ export function CardImage({ aspectRatio = '16/9', alt = '', className, ...props 
 export function CardHeader({ title, subtitle, titleAs: TitleTag = 'h3' }: CardHeaderProps) {
   return (
     <div className="px-4 pt-4">
-      <TitleTag className="text-lg font-semibold text-stanford-black">{title}</TitleTag>
-      {subtitle && <p className="mt-1 text-sm text-stanford-cool-grey">{subtitle}</p>}
+      <TitleTag className="text-lg font-semibold text-brand-dark">{title}</TitleTag>
+      {subtitle && <p className="mt-1 text-sm text-brand-cool-grey">{subtitle}</p>}
     </div>
   );
 }
 
 export function CardBody({ children, className }: { children: React.ReactNode; className?: string }) {
-  return <div className={classNames('px-4 py-3 text-stanford-cool-grey text-sm', className)}>{children}</div>;
+  return <div className={classNames('px-4 py-3 text-brand-cool-grey text-sm', className)}>{children}</div>;
 }
 
 export function CardActions({ children, align = 'right' }: CardActionsProps) {

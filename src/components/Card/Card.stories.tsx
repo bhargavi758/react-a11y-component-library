@@ -26,15 +26,15 @@ export const Default: Story = {
   render: () => (
     <Card className="max-w-sm">
       <CardImage
-        src="https://placehold.co/400x225/8C1515/FFFFFF?text=Stanford"
-        alt="Stanford campus"
+        src="https://placehold.co/400x225/2563EB/FFFFFF?text=University"
+        alt="University campus"
       />
       <CardHeader
         title="Computer Science Program"
         subtitle="School of Engineering"
       />
       <CardBody>
-        Stanford's CS program consistently ranks among the top in the world, offering rigorous
+        Our CS program consistently ranks among the top in the world, offering rigorous
         coursework alongside groundbreaking research opportunities.
       </CardBody>
       <CardActions>
@@ -48,9 +48,9 @@ export const Default: Story = {
 export const Outlined: Story = {
   render: () => (
     <Card variant="outlined" className="max-w-sm">
-      <CardHeader title="Research Lab" subtitle="Gates Computer Science Building" />
+      <CardHeader title="Research Lab" subtitle="Computer Science Building" />
       <CardBody>
-        The Stanford Artificial Intelligence Laboratory (SAIL) is one of the leading
+        The Artificial Intelligence Laboratory (AIL) is one of the leading
         centers of AI research in the world.
       </CardBody>
       <CardActions>
@@ -65,7 +65,7 @@ export const Filled: Story = {
     <Card variant="filled" className="max-w-sm">
       <CardHeader title="Upcoming Event" subtitle="March 15, 2026" />
       <CardBody>
-        Annual Stanford Computer Forum — bringing together industry leaders and
+        Annual Computer Forum — bringing together industry leaders and
         academic researchers for a day of talks and networking.
       </CardBody>
     </Card>
@@ -89,10 +89,10 @@ export const Interactive: Story = {
 
 export const AsLink: Story = {
   render: () => (
-    <Card href="https://www.stanford.edu" className="max-w-sm">
-      <CardHeader title="Stanford University" subtitle="stanford.edu" />
+    <Card href="https://www.example.edu" className="max-w-sm">
+      <CardHeader title="University" subtitle="example.edu" />
       <CardBody>
-        Click anywhere on this card to navigate to the Stanford website.
+        Click anywhere on this card to navigate to the university website.
       </CardBody>
     </Card>
   ),
@@ -120,7 +120,7 @@ export const CardGrid: Story = {
       {['AI Research', 'Systems', 'Theory'].map((area) => (
         <Card key={area} as="article">
           <CardImage
-            src={`https://placehold.co/400x225/8C1515/FFFFFF?text=${area.replace(' ', '+')}`}
+            src={`https://placehold.co/400x225/2563EB/FFFFFF?text=${area.replace(' ', '+')}`}
             alt={`${area} research area`}
           />
           <CardHeader title={area} subtitle="Research Area" />

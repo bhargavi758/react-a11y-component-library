@@ -30,7 +30,7 @@ export function SkipLink({
         'sr-only focus:not-sr-only',
         'focus:fixed focus:top-2 focus:left-2 focus:z-[100]',
         'focus:inline-block focus:px-4 focus:py-2',
-        'focus:bg-stanford-red focus:text-white focus:font-semibold',
+        'focus:bg-brand-primary focus:text-white focus:font-semibold',
         'focus:rounded-md focus:shadow-lg',
         'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-focus',
         'transition-none',
